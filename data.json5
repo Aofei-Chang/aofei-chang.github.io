@@ -1,0 +1,200 @@
+{
+  // 页面title
+  title: "Personal page -- caf",
+  // 社交链接
+  social: {
+    github: "https://github.com/lunnar-being",
+    twitter: "https://twitter.com/lunnarbeing",
+    // linkedin: "https://www.linkedin.com/in/%E6%B0%B8%E6%B0%B8-%E6%A8%8A-705071104/",
+  },
+  // banner页
+  banner: {
+    anchor: {
+      id: "banner",
+      icon: "home",
+      name: "Home",
+    },
+    title: "Aofei Chang",
+    desc: [
+    ],
+  },
+  // 正文
+  // 不要修改各模块的 anchor.id
+  // 通过display控制模块是否展示
+  // 通过列表顺序控制模块展示顺序
+  modules: [
+    // 关于页
+    {
+      display: true,
+      anchor: {
+        id: "about",
+        icon: "user",
+        name: "About"
+      },
+      header: {
+        title: "information",
+        subtitle: "about me",
+      },
+      content: {
+        name: "Aofei Chang (常奥飞)",
+        desc: [
+        ],
+        md: "Hi! I'm Aofei Chang from China and currently a junior student at Peking University, majoring in Big Data Management and Applications.\
+        \n Though a novice in NLP, I'm super interested in some NLP topics, such as Information Extraction, Knowledge Graph and Knowledge-Based Application in NLP\
+        \n I enjoy spotting and sovling problems by learning new skills:\
+        \n- **Programming Language** --- Python, Java\
+        \n- **Web Based Language & Framework**  --- HTML, JavaScript, CSS, Vue.js, Node.js, tornado, flask\
+        \n- **DB** --- MySQL, MongoDB, Redis\
+        \n- **Server Tools** --- Linux Shell, Nginx\
+        \n- **Big Data Tools (learning🔥)** --- Hadoop etc.\
+        \n- **Deep Learning Framework** --- Pytorch\
+        \n\
+        \n I love basketball🏀 & workout💪🏻 and I'm a fan of LA Clippers!\
+        \n Also an avid amateurish photography lover.\
+        "
+      },
+      // key - value 数量及内容完全自定义，链接自动识别
+      keys: {
+        "Personal Page": "https://lunnar-being.github.io/",
+        "Mail": "chaf@pku.edu.cn",
+        "Phone": "(+86) 16600041898",
+        "Github": "https://github.com/lunnar-being"
+      },
+    },
+    // publications
+    {
+      display: true,
+      anchor: {
+        id: "publication",
+        icon: "file-pdf",
+        name: "Publication"
+      },
+      header: {
+        title: "Publication",
+        subtitle: "my Academic publication",
+      },
+      cards: [
+        {
+          title: "Conference Paper",
+          subtitle: "EEKE 2021.10",
+          md: ' \
+          \n **Chang, Aofei**, Bolin Hua, and Dahai Yu. *"Keyword Extraction and Technology Entity Extraction for \
+          Disruptive Technology Policy Texts."* Workshop on Extraction and Evaluation of Knowledge Entities from Scientific Documents. 2021.'
+          
+        },
+      ],
+    },
+    // 履历
+    {
+      display: true,
+      anchor: {
+        id: "experience",
+        icon: "file-search",
+        name: "Academic Experience"
+      },
+      header: {
+        title: "experience",
+        subtitle: "my Academic experience",
+      },
+      cards: [
+        {
+          title: "Peking University",
+          subtitle: "2019-09 - 2023-07",
+          num:0,
+          md: "**<u>Bachelor</u>**\
+          \n**Department**: Information Management\
+          \n**Major**：Big Data Management and Application"
+          
+        },
+        {
+          title: "Remote Research with Prof. Ma in PENN STATE UNIVERSITY",
+          subtitle: "July 2022 - Now",
+          num:1,
+          md: "<!--**<u>高级开发工程师</u>**-->\
+          \n- ICD-Coding, Knowledge Graph, Medical Text"
+        },
+        {
+          title: "Research in Text Mining Group led by Assoc Prof. Bolin Hua",
+          subtitle: "December 2020 - Now",
+          num:1,
+          img:"images/experience/group1.jpg",
+          md: "<!--**<u>高级开发工程师</u>**-->\
+          \n- Learn a broader range of text mining & web system development techniques\
+          \n- Contribution to Disruptive Technology Policy Text Collecting and Mining System\
+          \n- Leadership in developing the monitoring and Mining System for Technology Policy Text"
+        },
+        {
+          title: "Challenge Cup 2021-2022 in PKU",
+          subtitle: "November 2021 – April 2022",
+          num:2,
+          md: "<!--**<u>高级Java工程师</u>**-->\
+          \nTitle: *Governance of Self-Media Misinformation on Social Media Platforms through the Lens of Comparative Research –Data Analysis of COVID-19 Vaccine Information Based on Sina Weibo and Twitter Platform*\
+          \n- By collecting Twitter data for more fine-grained thematic data expansion on the basis of Weibo\
+          labeled data, we discover the potential patterns of disinformation in different time periods, topics,\
+          subjects, and platforms through basic data statistical analysis, time-series analysis, and text mining\
+          analysis of platform data."
+        },
+        {
+          title: "Independent research under the guidance of a mentor ",
+          subtitle: "January 2022-March 2022",
+          num:3,
+          md: "<!--**<u>技术经理</u>**-->\
+          \nTitle: *Key Phrase Extraction and Topic Retrieval for COVID-19 Vaccine Misinformation Tweets*\
+          \n- Considering the Twitter’s token number limit, after data collection and analysis, the paper proposes\
+          a novel method for key phrases extraction and tweet misinformation topic based on Bert pre-training\
+          model and contrastive learning."
+        },
+        
+      ],
+    },
+    // project页
+    {
+      display: true,
+      anchor: {
+        id: "project",
+        icon: "cluster",
+        name: "Project",
+      },
+      header: {
+        title: "project",
+        subtitle: "latest projects",
+      },
+      cards:[
+        {
+          title: "A General Knowledge Graph Visualization & Retrieval System",
+          subtitle: "June 2022 – July 2022",
+          img:"images/project/kgv1.png",
+          md: "<!--**<u>技术经理</u>**-->\
+          \n - to collect, analyse and visualize technology policy texts.\
+          \n - Policy topic classification &  Keywords extraction & Entity Extraction & Summary generation & Statistics and Visualization"
+        },
+        {
+          title: "Technology Policy Text Monitoring and Mining System",
+          subtitle: "Nov 2021 – April 2022",
+          img:"images/project/tech1.png",
+          md: "<!--**<u>技术经理</u>**-->\
+          \n - It is mainly developed to collect, analyse and visualize technology policy texts.\
+          \n - Policy topic classification &  Keywords extraction & Entity Extraction & Summary generation & Statistics and Visualization"
+        },
+        {
+          title: "Retrieval System for Flowers in Peking University Campus",
+          subtitle: "April 2021-June 2021",
+          img:"images/project/flower1.jpg",
+          md: "<!--**<u>技术经理</u>**-->\
+          \n - This is a Retrieval System for PKU flowers that allows web user to browse and retrieval information of all flowers in campus.\
+          \n - It contains simple retrieval & advanced retrieval & category browsing & image retrieval"
+        },
+        {
+          title: "Bookshop Sales and Management System",
+          subtitle: "November 2020 – January 2021",
+          img:"images/project/bookstore.png",
+          md: "<!--**<u>技术经理</u>**-->\
+          \n - This web-based software helps to manage daily activities of a bookshop.\
+          \n - It helps to check available products in and out, with customer-oriented sales interfa"
+        },
+        
+        
+      ],
+    },
+  ],
+}
