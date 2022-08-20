@@ -107,6 +107,13 @@
           
         },
         {
+          title: "Remote Research with Prof. Ma in PENN STATE UNIVERSITY",
+          subtitle: "July 2022 - Now",
+          num:1,
+          md: "<!--**<u>高级开发工程师</u>**-->\
+          \n- ICD-Coding, Knowledge Graph, Medical Text"
+        },
+        {
           title: "Research in Text Mining Group led by Assoc Prof. Bolin Hua",
           subtitle: "December 2020 - Now",
           num:1,
@@ -153,6 +160,15 @@
         subtitle: "latest projects",
       },
       cards:[
+        {
+          title: "A General Knowledge Graph Visualization & Retrieval System",
+          subtitle: "June 2022 – July 2022",
+          img:"images/project/kgv1.png",
+          md: "<!--**<u>技术经理</u>**-->\
+          \n - It is a universal, ready-to-use Knowledge Graph Visualization & Retrieval System.\ 
+          \n - to collect, analyse and visualize technology policy texts.\
+          \n - Policy topic classification &  Keywords extraction & Entity Extraction & Summary generation & Statistics and Visualization"
+        },
         {
           title: "Technology Policy Text Monitoring and Mining System",
           subtitle: "Nov 2021 – April 2022",
