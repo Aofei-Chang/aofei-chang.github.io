@@ -165,8 +165,8 @@
           subtitle: "June 2022 – July 2022",
           img:"images/project/kgv1.png",
           md: "<!--**<u>技术经理</u>**-->\
-          \n - to collect, analyse and visualize technology policy texts.\
-          \n - Policy topic classification &  Keywords extraction & Entity Extraction & Summary generation & Statistics and Visualization"
+          \n - Knowledge Graph visualization and intelligent retrieval\
+          \n - A general and ready-to-use tool"
         },
         {
           title: "Technology Policy Text Monitoring and Mining System",
