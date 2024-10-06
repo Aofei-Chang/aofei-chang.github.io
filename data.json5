@@ -3,7 +3,7 @@
   title: "Personal page -- caf",
   // 社交链接
   social: {
-    github: "https://github.com/lunnar-being",
+    github: "https://github.com/Aofei-Chang",
     twitter: "https://twitter.com/lunnarbeing",
     // linkedin: "https://www.linkedin.com/in/%E6%B0%B8%E6%B0%B8-%E6%A8%8A-705071104/",
   },
@@ -39,8 +39,9 @@
         name: "Aofei Chang (常奥飞)",
         desc: [
         ],
-        md: "Hi! I'm Aofei Chang from China and currently a junior student at Peking University, majoring in Big Data Management and Applications.\
-        \n Though a novice in NLP, I'm super interested in some NLP topics, such as PTM、Contrastive and Few-shot learning, Knowledge Graph and Knowledge-Based Application in NLP\
+        md: "Hi! I’m Aofei Chang, currently a second-year PhD student at Penn State. I completed my bachelor's degree in Big Data Management and Applications at Peking University, China.\
+        \n I am broadly interested in data science and artificial intelligence with a focus on health informatics and machine learning. In particular, I am interested in automated machine learning, trustworthy multimodal large language models. \
+        \n Currently, I am working on projects related to trustworthy Medical Large Vision Language Models (Med-LVLMs), particularly focusing on hallucinations in these models. \
         \n I enjoy spotting and sovling problems by learning new skills:\
         \n- **Programming Language** --- Python, Java\
         \n- **Web Based Language & Framework**  --- HTML, JavaScript, CSS, Vue.js, Node.js, tornado, flask\
@@ -50,15 +51,14 @@
         \n- **Deep Learning Framework** --- Pytorch\
         \n\
         \n I love basketball🏀 & workout💪🏻 and I'm a fan of LA Clippers!\
-        \n Also an avid amateurish photography lover.\
         "
       },
       // key - value 数量及内容完全自定义，链接自动识别
       keys: {
-        "Personal Page": "https://lunnar-being.github.io/",
-        "Mail": "chaf@pku.edu.cn",
-        "Phone": "(+86) 16600041898",
-        "Github": "https://github.com/lunnar-being"
+        "Personal Page": "https://aofei-chang.github.io/",
+        "Mail": "aofei AT psu.edu",
+        "Phone": "(+86) 16600041898; (+1) 8144705951",
+        "Github": "https://github.com/Aofei-Chang"
       },
     },
     // publications
@@ -70,18 +70,45 @@
         name: "Publication"
       },
       header: {
-        title: "Publication",
-        subtitle: "my Academic publication",
+        title: "Publication and Submissions",
+        subtitle: "My cademic publication and submission",
       },
       cards: [
         {
           title: "Conference Paper",
-          subtitle: "EEKE 2021.10",
+          subtitle: "EMNLP 2024",
           md: ' \
-          \n **Chang, Aofei**, Bolin Hua, and Dahai Yu. *"Keyword Extraction and Technology Entity Extraction for \
-          Disruptive Technology Policy Texts."* Workshop on Extraction and Evaluation of Knowledge Entities from Scientific Documents. 2021.'
+          \n **Aofei Chang**, Jiaqi Wang, Han Liu, Parminder Bhatia, Cao Xiao, Ting Wang, and Fenglong Ma. *BIPEFT: Budget-Guided Iterative Search for Parameter Efficient Fine-Tuning of Large Pretrained Language Models*, *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024, findings)*, November 12–16, Miami, Florida.'
           
         },
+        {
+              title: "Conference Paper",
+              subtitle: "COLING 2024",
+              md: ' \
+              \n Junyu Luo, Xiaochen Wang, Jiaqi Wang, **Aofei Chang**, Yaqing Wang, and Fenglong Ma. *CoRelation: Boosting Automatic ICD Coding Through Contextualized Code Relation Learning*. *Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)*, May 20-25, 2024, Torino, Italy.'
+              
+            },
+        {
+              title: "Conference Paper",
+              subtitle: "IJCAI 2024",
+              md: ' \
+              \n Jiaqi Wang, Junyu Luo, Muchao Ye, Xiaochen Wang, Yuan Zhong, **Aofei Chang**, Guanjie Huang, Ziyi Yin, Cao Xiao, Jimeng Sun, and Fenglong Ma. *Recent Advances in Predictive Modeling with Electronic Health Records*, *Proceedings of the 33rd International Joint Conference on Artificial Intelligence (IJCAI 2024)* Survey Track, Aug. 3-9, 2024, Jeju, South Korea.'
+              
+            },
+        {
+              title: "Conference Paper Submission",
+              subtitle: "AAAI 2025",
+              md: ' \
+              \n **Aofei Chang**, Le Huang, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, and Cao Xiao. *MedHEval: A Comprehensive Benchmark for Evaluating Hallucinations in Medical Large Vision Language Models*, *Proceedings of the Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)*, February 25 – March 4, 2025, Philadelphia, Pennsylvania.'
+              
+            },
+        {
+              title: "Conference Paper Submission",
+              subtitle: "AAAI 2025",
+              md: ' \
+              \n Ziyi Yin, Muchao Ye, Yuanpu Cao, **Aofei Chang**, Jiaqi Wang, Han Liu, Jinghui Chen, Ting Wang, and Fenglong Ma. *Shadow-Activated Backdoor Attacks on Multimodal Large Language Models*, *Proceedings of the Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)*, February 25 – March 4, 2025, Philadelphia, Pennsylvania.'
+              
+            },
       ],
     },
     // 履历
@@ -98,6 +125,15 @@
       },
       cards: [
         {
+          title: "Penn State",
+          subtitle: "2023-9 - Now",
+          num:0,
+          md: "**<u>PhD</u>**\
+          \n**Department**: Information Science and Technology\
+          \n**Major**：Informatics"
+          
+        },
+        {
           title: "Peking University",
           subtitle: "2019-09 - 2023-07",
           num:0,
@@ -106,13 +142,7 @@
           \n**Major**：Big Data Management and Application"
           
         },
-        {
-          title: "Remote Research with tenure-track Assistant Prof. Ma in the College of Information Sciences and Technology of PENN STATE UNIVERSITY",
-          subtitle: "July 2022 - Now",
-          num:1,
-          md: "<!--**<u>高级开发工程师</u>**-->\
-          \n- ICD-Coding, Knowledge Graph, Medical Text"
-        },
+        
         {
           title: "Research in Text Mining Group led by Assoc Prof. Bolin Hua",
           subtitle: "December 2020 - Now",
@@ -157,7 +187,7 @@
       },
       header: {
         title: "project",
-        subtitle: "latest projects",
+        subtitle: "Some web projects",
       },
       cards:[
         {
