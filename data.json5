@@ -97,14 +97,14 @@
             },
         {
               title: "Conference Paper Submission",
-              subtitle: "AAAI 2025",
+              subtitle: "",
               md: ' \
               \n **Aofei Chang**, Le Huang, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, and Cao Xiao. *MedHEval: A Comprehensive Benchmark for Evaluating Hallucinations in Medical Large Vision Language Models*, *Proceedings of the Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)*, February 25 – March 4, 2025, Philadelphia, Pennsylvania.'
               
             },
         {
               title: "Conference Paper Submission",
-              subtitle: "AAAI 2025",
+              subtitle: "",
               md: ' \
               \n Ziyi Yin, Muchao Ye, Yuanpu Cao, **Aofei Chang**, Jiaqi Wang, Han Liu, Jinghui Chen, Ting Wang, and Fenglong Ma. *Shadow-Activated Backdoor Attacks on Multimodal Large Language Models*, *Proceedings of the Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)*, February 25 – March 4, 2025, Philadelphia, Pennsylvania.'
               
