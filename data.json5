@@ -74,6 +74,19 @@
         subtitle: "My cademic publication and submission",
       },
       cards: [
+		{
+          title: "Conference Paper",
+          subtitle: "ACL 2025",
+          md: ' \
+          \n **Aofei Chang**, Le Huang, Alex James Boyd, Parminder Bhatia, Taha Kass-Hout, Cao Xiao, Fenglong Ma. *Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning.*, *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025, Main Conference)*, July 27 – August 1, Vienna, Austria.'
+          
+        },
+		{
+		  title: "Conference Paper",
+		  subtitle: "ACL 2025",
+		  md: ' \
+		  \n Ziyi Yin, Muchao Ye, Yuanpu Cao, Jiaqi Wang, **Aofei Chang**, Han Liu, Jinghui Chen, Ting Wang, and Fenglong Ma. *Shadow-Activated Backdoor Attacks on Multimodal Large Language Models*, Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025, Findings)*, July 27 – August 1, Vienna, Austria.'
+        },
         {
           title: "Conference Paper",
           subtitle: "EMNLP 2024",
@@ -95,20 +108,22 @@
               \n Jiaqi Wang, Junyu Luo, Muchao Ye, Xiaochen Wang, Yuan Zhong, **Aofei Chang**, Guanjie Huang, Ziyi Yin, Cao Xiao, Jimeng Sun, and Fenglong Ma. *Recent Advances in Predictive Modeling with Electronic Health Records*, *Proceedings of the 33rd International Joint Conference on Artificial Intelligence (IJCAI 2024)* Survey Track, Aug. 3-9, 2024, Jeju, South Korea.'
               
             },
-        {
+			
+		{
               title: "Conference Paper Submission",
               subtitle: "",
               md: ' \
-              \n **Aofei Chang**, Le Huang, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, and Cao Xiao. *MedHEval: A Comprehensive Benchmark for Evaluating Hallucinations in Medical Large Vision Language Models*, *Proceedings of the Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)*, February 25 – March 4, 2025, Philadelphia, Pennsylvania.'
+              \n **Aofei Chang**, Ting Wang and Fenglong Ma. *Enhancing Medical Large Vision-Language Models via Alignment Distillation*.'
               
             },
         {
               title: "Conference Paper Submission",
               subtitle: "",
               md: ' \
-              \n Ziyi Yin, Muchao Ye, Yuanpu Cao, **Aofei Chang**, Jiaqi Wang, Han Liu, Jinghui Chen, Ting Wang, and Fenglong Ma. *Shadow-Activated Backdoor Attacks on Multimodal Large Language Models*, *Proceedings of the Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)*, February 25 – March 4, 2025, Philadelphia, Pennsylvania.'
+              \n **Aofei Chang**, Le Huang, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, and Cao Xiao. *MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models*.'
               
             },
+        
       ],
     },
     // 履历
