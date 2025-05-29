@@ -76,7 +76,7 @@
       cards: [
 		{
           title: "Conference Paper",
-          subtitle: "ACL 2025",
+          subtitle: "## ACL 2025",
           md: ' \
           \n **Aofei Chang**, Le Huang, Alex James Boyd, Parminder Bhatia, Taha Kass-Hout, Cao Xiao, Fenglong Ma. *Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning.*, *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025, Main Conference)*, July 27 – August 1, Vienna, Austria.'
           
@@ -85,7 +85,7 @@
 		  title: "Conference Paper",
 		  subtitle: "ACL 2025",
 		  md: ' \
-		  \n Ziyi Yin, Muchao Ye, Yuanpu Cao, Jiaqi Wang, **Aofei Chang**, Han Liu, Jinghui Chen, Ting Wang, and Fenglong Ma. *Shadow-Activated Backdoor Attacks on Multimodal Large Language Models*, Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025, Findings)*, July 27 – August 1, Vienna, Austria.'
+		  \n Ziyi Yin, Muchao Ye, Yuanpu Cao, Jiaqi Wang, **Aofei Chang**, Han Liu, Jinghui Chen, Ting Wang, and Fenglong Ma. *Shadow-Activated Backdoor Attacks on Multimodal Large Language Models*, *Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025, Findings)*, July 27 – August 1, Vienna, Austria.'
         },
         {
           title: "Conference Paper",
