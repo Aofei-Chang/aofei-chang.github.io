@@ -39,7 +39,7 @@
         name: "Aofei Chang (常奥飞)",
         desc: [
         ],
-        md: "Hi! I’m Aofei Chang, currently a second-year PhD student at Penn State. I completed my bachelor's degree in Big Data Management and Applications at Peking University, China.\
+        md: "Hi! I’m Aofei Chang, currently a third-year PhD student at Penn State. I completed my bachelor's degree in Big Data Management and Applications at Peking University, China.\
         \n I am broadly interested in data science and artificial intelligence with a focus on health informatics and machine learning. In particular, I am interested in automated machine learning, trustworthy multimodal large language models. \
         \n Currently, I am working on projects related to trustworthy Medical Large Vision Language Models (Med-LVLMs), particularly focusing on hallucinations in these models. \
         \n I enjoy spotting and sovling problems by learning new skills:\
@@ -47,7 +47,7 @@
         \n- **Web Based Language & Framework**  --- HTML, JavaScript, CSS, Vue.js, Node.js, tornado, flask\
         \n- **DB** --- MySQL, MongoDB, Redis\
         \n- **Server Tools** --- Linux Shell, Nginx\
-        \n- **Big Data Tools (learning🔥)** --- Spark, Hadoop etc.\
+        \n- **Big Data Tools** --- Spark, Hadoop etc.\
         \n- **Deep Learning Framework** --- Pytorch\
         \n\
         \n I love basketball🏀 & workout💪🏻 and I'm a fan of LA Clippers!\
@@ -74,6 +74,13 @@
         subtitle: "My cademic publication and submission",
       },
       cards: [
+		{
+          title: "Conference Paper",
+          subtitle: "AAAI 2026",
+          md: ' \
+          \n **Aofei Chang**, Ting Wang, and Fenglong Ma. *Enhancing Medical Large Vision-Language Models via Alignment Distillation.*, *Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI 2026)*, January 2026, Singapore.'
+          
+        },
 		{
           title: "Conference Paper",
           subtitle: "ACL 2025",
@@ -109,15 +116,8 @@
               
             },
 			
-		{
-              title: "Conference Paper Submission",
-              subtitle: "",
-              md: ' \
-              \n **Aofei Chang**, Ting Wang and Fenglong Ma. *Enhancing Medical Large Vision-Language Models via Alignment Distillation*.'
-              
-            },
         {
-              title: "Conference Paper Submission",
+              title: "Preprints",
               subtitle: "",
               md: ' \
               \n **Aofei Chang**, Le Huang, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, and Cao Xiao. *MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models*.'
@@ -243,3 +243,4 @@
     },
   ],
 }
+
