@@ -1,1 +1,323 @@
-<!DOCTYPE html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=description content=vuesume><meta name=keywords content=vuesume,resume,cv,manerfan,林舍,林中小舍><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>vuesume</title><link href=/css/app.1a86fcf6.css rel=preload as=style><link href=/css/chunk-vendors.95a88c14.css rel=preload as=style><link href=/js/app.d876cdbe.js rel=preload as=script><link href=/js/chunk-vendors.f8454d61.js rel=preload as=script><link href=/css/chunk-vendors.95a88c14.css rel=stylesheet><link href=/css/app.1a86fcf6.css rel=stylesheet></head><body><noscript><strong>We're sorry but vuesume doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.f8454d61.js></script><script src=/js/app.d876cdbe.js></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aofei Chang</title>
+<meta name="description" content="Aofei Chang — Ph.D. student in Computer Science at the University of Illinois Urbana-Champaign, working on medical multimodal large language models.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbf9f7;
+  --surface: #ffffff;
+  --ink: #1f1d1c;
+  --muted: #6b6560;
+  --line: #e9e3de;
+  --accent: #a8395c;      /* plum blossom */
+  --accent-soft: #f6e6ec;
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161415;
+    --surface: #1e1b1c;
+    --ink: #ece7e4;
+    --muted: #a39b96;
+    --line: #2f2a2b;
+    --accent: #e48aa8;
+    --accent-soft: #3a2229;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.layout { display: grid; grid-template-columns: minmax(300px, 38%) 1fr; min-height: 100vh; }
+
+/* ---------- Side panel (PKU blossom) ---------- */
+.side {
+  position: sticky; top: 0; height: 100vh;
+  background: url("assets/pku-blossom.jpg") center 35% / cover no-repeat;
+  color: #fff;
+  display: flex; flex-direction: column; justify-content: flex-end;
+}
+.side::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(20,14,16,0) 30%, rgba(20,14,16,.78) 100%);
+}
+.side-inner { position: relative; padding: 48px 44px; }
+.side h1 { font: 500 2.6rem/1.1 var(--serif); margin: 0 0 4px; letter-spacing: -.01em; }
+.side .cn { font-size: 1.05rem; opacity: .85; margin: 0 0 18px; }
+.side .role { margin: 0 0 22px; font-size: .98rem; line-height: 1.55; opacity: .95; }
+.links { display: flex; flex-wrap: wrap; gap: 8px; }
+.links a {
+  color: #fff; font-size: .85rem; font-weight: 500;
+  padding: 6px 13px; border: 1px solid rgba(255,255,255,.45); border-radius: 999px;
+  backdrop-filter: blur(4px); background: rgba(255,255,255,.08);
+}
+.links a:hover { background: rgba(255,255,255,.22); text-decoration: none; }
+.photo-note { margin-top: 26px; font-size: .75rem; opacity: .6; }
+
+/* ---------- Main column ---------- */
+main { padding: 64px clamp(20px, 6vw, 88px) 80px; max-width: 880px; }
+nav.toc {
+  display: flex; flex-wrap: wrap; gap: 4px 18px;
+  font-size: .85rem; margin-bottom: 48px; padding-bottom: 16px; border-bottom: 1px solid var(--line);
+}
+nav.toc a { color: var(--muted); }
+nav.toc a:hover { color: var(--accent); text-decoration: none; }
+
+section { margin-bottom: 56px; scroll-margin-top: 24px; }
+h2 {
+  font: 500 1.55rem/1.2 var(--serif); margin: 0 0 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+p { margin: 0 0 14px; }
+.lead { font-size: 1.05rem; }
+.muted { color: var(--muted); }
+
+/* News */
+.news { list-style: none; margin: 0; padding: 0; }
+.news li { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 7px 0; }
+.news time { color: var(--muted); font-size: .88rem; font-variant-numeric: tabular-nums; padding-top: 1px; }
+
+/* Publications */
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub { display: grid; grid-template-columns: 92px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+.pub:first-child { border-top: 0; padding-top: 0; }
+.venue {
+  align-self: start; justify-self: start;
+  font-size: .74rem; font-weight: 600; letter-spacing: .02em;
+  color: var(--accent); background: var(--accent-soft);
+  padding: 3px 8px; border-radius: 6px; white-space: nowrap;
+}
+.pub .title { font-family: var(--serif); font-size: 1.12rem; font-weight: 500; line-height: 1.35; margin: 0 0 4px; }
+.pub .authors { font-size: .92rem; margin: 0 0 2px; }
+.pub .authors b { font-weight: 600; }
+.pub .where { font-size: .86rem; color: var(--muted); margin: 0; }
+.sub { font: 600 .78rem/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 26px 0 12px; }
+
+/* Timeline entries */
+.entry { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.entry:first-of-type { border-top: 0; padding-top: 0; }
+.entry h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+.entry .when { color: var(--muted); font-size: .88rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.entry .what { grid-column: 1 / -1; font-size: .94rem; margin: 0; }
+.entry .what i { color: var(--muted); }
+.entry .desc { grid-column: 1 / -1; font-size: .92rem; color: var(--muted); margin: 4px 0 0; }
+
+footer { color: var(--muted); font-size: .8rem; border-top: 1px solid var(--line); padding-top: 18px; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 860px) {
+  .layout { display: block; }
+  .side { position: relative; height: auto; min-height: 72vh; background-position: center 30%; }
+  .side-inner { padding: 120px 20px 28px; }
+  .side h1 { font-size: 2.2rem; }
+  main { padding: 36px 16px 60px; }
+  .news li, .pub { grid-template-columns: 1fr; gap: 4px; }
+  .entry { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="side">
+    <div class="side-inner">
+      <h1>Aofei Chang</h1>
+      <p class="cn">常奥飞</p>
+      <p class="role">Ph.D. Student in Computer Science<br>Siebel School of Computing and Data Science<br>University of Illinois Urbana-Champaign</p>
+      <div class="links">
+        <a href="mailto:aofeic2@illinois.edu">Email</a>
+        <a href="Aofei_Chang_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="https://github.com/Aofei-Chang" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://twitter.com/lunnarbeing" target="_blank" rel="noopener">Twitter</a>
+      </div>
+      <p class="photo-note">Plum blossoms in snow · Peking University</p>
+    </div>
+  </aside>
+
+  <main>
+    <nav class="toc">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#honors">Honors</a>
+    </nav>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="lead">I am a Ph.D. student in Computer Science at the <a href="https://siebelschool.illinois.edu/" target="_blank" rel="noopener">University of Illinois Urbana-Champaign</a>, advised by Dr. Fenglong Ma. I joined UIUC in Fall 2026 after doctoral studies in Informatics at Penn State, where I also received my M.S. I earned my B.E. in Big Data Management and Application from Peking University.</p>
+      <p>My research advances <strong>medical multimodal large language models</strong>, with an emphasis on grounded visual–textual understanding, fine-grained perception, and reliable reasoning. I have interned at GE HealthCare, building grounded and hallucination-resistant medical vision–language models, and at Amazon, working on language capabilities for generative recommendation.</p>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>Aug 2026</time><span>Started my Ph.D. in Computer Science at UIUC.</span></li>
+        <li><time>2026</time><span><strong>MedSIGHT</strong> accepted at <strong>ICML 2026</strong>.</span></li>
+        <li><time>Sum 2026</time><span>Research intern at Amazon (Sandstone), working on language fusion for generative recommendation.</span></li>
+        <li><time>2026</time><span>Received the IST Rising Star Award (Runner-up).</span></li>
+        <li><time>Jan 2026</time><span>Alignment distillation for medical LVLMs presented at <strong>AAAI 2026</strong>.</span></li>
+        <li><time>2025</time><span>Two papers at <strong>ACL 2025</strong>.</span></li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="pubs">
+        <li class="pub">
+          <span class="venue">ICML 2026</span>
+          <div>
+            <p class="title">MedSIGHT: Towards Grounded Visual Comprehension in Medical Large Vision-Language Models</p>
+            <p class="authors"><b>Aofei Chang</b>, Le Huang, Alex James Boyd, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, Cao Xiao</p>
+            <p class="where">International Conference on Machine Learning, Seoul, South Korea</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="venue">AAAI 2026</span>
+          <div>
+            <p class="title">Enhancing Medical Large Vision-Language Models via Alignment Distillation</p>
+            <p class="authors"><b>Aofei Chang</b>, Ting Wang, Fenglong Ma</p>
+            <p class="where">40th AAAI Conference on Artificial Intelligence, Singapore</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="venue">ACL 2025</span>
+          <div>
+            <p class="title">Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning</p>
+            <p class="authors"><b>Aofei Chang</b>, Le Huang, Alex James Boyd, Parminder Bhatia, Taha Kass-Hout, Cao Xiao, Fenglong Ma</p>
+            <p class="where">63rd Annual Meeting of the Association for Computational Linguistics (Main), Vienna, Austria</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="venue">EMNLP 2024</span>
+          <div>
+            <p class="title">BIPEFT: Budget-Guided Iterative Search for Parameter Efficient Fine-Tuning of Large Pretrained Language Models</p>
+            <p class="authors"><b>Aofei Chang</b>, Jiaqi Wang, Han Liu, Parminder Bhatia, Cao Xiao, Ting Wang, Fenglong Ma</p>
+            <p class="where">Findings of EMNLP 2024, Miami, Florida</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="venue">ACL 2025</span>
+          <div>
+            <p class="title">Shadow-Activated Backdoor Attacks on Multimodal Large Language Models</p>
+            <p class="authors">Ziyi Yin, Muchao Ye, Yuanpu Cao, <b>Aofei Chang</b>, Jiaqi Wang, Han Liu, Jinghui Chen, Ting Wang, Fenglong Ma</p>
+            <p class="where">Findings of ACL 2025, Vienna, Austria</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="venue">IJCAI 2024</span>
+          <div>
+            <p class="title">Recent Advances in Predictive Modeling with Electronic Health Records</p>
+            <p class="authors">Jiaqi Wang, Junyu Luo, Muchao Ye, Xiaochen Wang, Yuan Zhong, <b>Aofei Chang</b>, Guanjie Huang, Ziyi Yin, Cao Xiao, Jimeng Sun, Fenglong Ma</p>
+            <p class="where">33rd International Joint Conference on Artificial Intelligence, Survey Track, Jeju, South Korea</p>
+          </div>
+        </li>
+        <li class="pub">
+          <span class="venue">COLING 2024</span>
+          <div>
+            <p class="title">CoRelation: Boosting Automatic ICD Coding Through Contextualized Code Relation Learning</p>
+            <p class="authors">Junyu Luo, Xiaochen Wang, Jiaqi Wang, <b>Aofei Chang</b>, Yaqing Wang, Fenglong Ma</p>
+            <p class="where">LREC-COLING 2024, Torino, Italy</p>
+          </div>
+        </li>
+      </ul>
+
+      <p class="sub">Preprints</p>
+      <ul class="pubs">
+        <li class="pub">
+          <span class="venue">Preprint</span>
+          <div>
+            <p class="title">MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models</p>
+            <p class="authors"><b>Aofei Chang</b>, Le Huang, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, Cao Xiao</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="entry">
+        <h3>Amazon — Sandstone</h3><span class="when">Summer 2026</span>
+        <p class="what">Research Intern · <i>Language Fusion for Generative Recommendation</i></p>
+        <p class="desc">Explored techniques to add and preserve language capabilities in the Sandstone foundation model for generative recommendation.</p>
+      </div>
+      <div class="entry">
+        <h3>GE HealthCare</h3><span class="when">Summer 2025</span>
+        <p class="what">Research Intern · <i>Visually Grounded Medical Large Vision–Language Models</i></p>
+        <p class="desc">Pre-trained a medical LVLM with multi-grained perception and pixel-level visual grounding via a region perceiver and region-level codebook — accepted at ICML 2026 as MedSIGHT. Manager: Dr. Cao (Danica) Xiao; mentors: Dr. Le Huang, Dr. Alex James Boyd.</p>
+      </div>
+      <div class="entry">
+        <h3>GE HealthCare</h3><span class="when">Summer 2024</span>
+        <p class="what">Research Intern · <i>Hallucinations in Medical Large Vision–Language Models</i></p>
+        <p class="desc">Built a benchmark for evaluating and mitigating hallucinations in medical LVLMs, then proposed a weakly supervised attention-alignment method — published at ACL 2025. Manager: Dr. Cao (Danica) Xiao; mentor: Dr. Le Huang.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="entry">
+        <h3>University of Illinois Urbana-Champaign</h3><span class="when">Aug 2026 – Present</span>
+        <p class="what">Ph.D. in Computer Science · Advisor: Dr. Fenglong Ma</p>
+      </div>
+      <div class="entry">
+        <h3>The Pennsylvania State University</h3><span class="when">Sep 2023 – Aug 2026</span>
+        <p class="what">Doctoral studies in Informatics · M.S. in Informatics (2025) · Advisor: Dr. Fenglong Ma</p>
+      </div>
+      <div class="entry">
+        <h3>Peking University</h3><span class="when">Sep 2019 – Jun 2023</span>
+        <p class="what">B.E. in Big Data Management and Application</p>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <div class="entry">
+        <h3>IST 558 Data Mining II · Penn State</h3><span class="when">Spring 2026</span>
+        <p class="what">Teaching Assistant · Instructor: Dr. Fenglong Ma</p>
+      </div>
+      <div class="entry">
+        <h3>IST 402 Data Science in Healthcare · Penn State</h3><span class="when">Fall 2025</span>
+        <p class="what">Teaching Assistant · Instructor: Dr. Fenglong Ma</p>
+      </div>
+      <div class="entry">
+        <h3>Cases Study of Big Data Application · Peking University</h3><span class="when">Fall 2022</span>
+        <p class="what">Teaching Assistant · Instructor: Dr. Bolin Hua</p>
+      </div>
+    </section>
+
+    <section id="honors">
+      <h2>Honors &amp; Awards</h2>
+      <ul class="news">
+        <li><time>2026</time><span>IST Rising Star Award, Runner-up</span></li>
+        <li><time>2023</time><span>Robert W. Graham Endowed Graduate Fellowship</span></li>
+      </ul>
+    </section>
+
+    <footer>
+      Last updated November 2026 · <a href="/archive/">Previous version of this site</a>
+    </footer>
+  </main>
+
+</div>
+</body>
+</html>
